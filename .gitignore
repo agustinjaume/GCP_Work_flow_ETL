@@ -1,0 +1,6 @@
+credentials/credentials.json
+*.terraform
+*.tfstate
+*.tplan
+*.tfplan
+*.tfstate
