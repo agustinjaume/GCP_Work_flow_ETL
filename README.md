@@ -8,7 +8,7 @@ We will load the dataset again so that it is available for consumption.
 
 ### Long term goals
 
-<img src="../images/gcp_etl_by_agustin_jaume-3-ETL-FLOW.png" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
+<img src="./images/gcp_etl_by_agustin_jaume-3-ETL-FLOW.png" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
 
 <img src="./images/real-time-pipeline.png" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
 
