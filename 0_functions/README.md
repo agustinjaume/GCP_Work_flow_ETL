@@ -16,7 +16,7 @@ We will start as a function and for what we will use, we will talk superficially
 
 <img src="../images/gcp_etl_by_agustin_jaume-3-ETL-FLOW.png" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
 
-### Workfow 
+### Workshop 
 
 We will create a function from the web console that will be activated when we upload a file and will execute a Python function
 
