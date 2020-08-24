@@ -12,6 +12,12 @@ We will load the dataset again so that it is available for consumption.
 
 <img src="./images/real-time-pipeline.png" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
 
+### Introduction to BigQuery
+
+Storing and querying massive datasets can be time consuming and expensive without the right hardware and infrastructure. BigQuery is an enterprise data warehouse that solves this problem by enabling super-fast SQL queries using the processing power of Google's infrastructure. Simply move your data into BigQuery and let us handle the hard work. You can control access to both the project and your data based on your business needs, such as giving others the ability to view or query your data.
+
+You can access BigQuery by using the Cloud Console or the classic web UI, by using a command-line tool, or by making calls to the BigQuery REST API using a variety of client libraries such as Java, .NET, or Python. There are also a variety of third-party tools that you can use to interact with BigQuery, such as visualizing the data or loading the data.
+
 ### Commands to work with Workspaces
 
 ```

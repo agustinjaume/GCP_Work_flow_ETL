@@ -36,5 +36,5 @@ def hello_world(request):
 
 ### Documentation 
 
-https://cloud.google.com/functions?hl=es-419
-https://cloud.google.com/functions/pricing?hl=es-419
+- https://cloud.google.com/functions?hl=es-419
+- https://cloud.google.com/functions/pricing?hl=es-419
