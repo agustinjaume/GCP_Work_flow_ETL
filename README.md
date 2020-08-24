@@ -2,7 +2,11 @@
 
 In this video, we will see why create a workflow in Google Cloud to run when a file is uploaded to the bucket.
 We will convert the information into a data set.
-We will transform part of the dataset information for its anonymization.
+We will transform part of the information in the data set for anonymization or segmentation, to avoid the following risks:
+    a. Known existing re-identification risks
+    b. Potential re-identification risks
+    c. Unknown risks
+
 We will load the dataset again so that it is available for consumption.
 
 
@@ -18,6 +22,28 @@ Storing and querying massive datasets can be time consuming and expensive withou
 
 You can access BigQuery by using the Cloud Console or the classic web UI, by using a command-line tool, or by making calls to the BigQuery REST API using a variety of client libraries such as Java, .NET, or Python. There are also a variety of third-party tools that you can use to interact with BigQuery, such as visualizing the data or loading the data.
 
+### Big Query structure 
+
+
+
+<img src="./images/bigquery-2.PNG" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
+
+
+
+### Big Query Security
+
+It is very important to have different levels of security.
+
+
+<img src="./images/bigquery-0.PNG" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
+
+
+<img src="./images/bigquery-1.PNG" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
+
+
+<img src="./images/bigquery-3.PNG" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
+
+
 ### Commands to work with Workspaces
 
 ```
@@ -28,29 +54,33 @@ export GOOGLE_APPLICATION_CREDENTIALS="../credentials/credentials.json"
 
 ### Function: function_create_dataset_big_query
 
-´´´
+In folder must be the Python file with the root function.
+It must have the same name with which we created the function.
+We can also use the file "requirements.txt" with the list of libraries to install.
+
+```
 gcloud functions deploy create_dataset_and_table_bq --runtime python38 --region europe-west3 --trigger-resource "big-data-poblacion" --trigger-event google.storage.object.finalize
-´´´
+```
 
 ### Function: create_dataset_and_table_and_move_data
 
-´´´
+```
 gcloud functions deploy create_dataset_and_table_and_move_data_bq --runtime python38 --region europe-west3 --trigger-resource "big-data-poblacion" --trigger-event google.storage.object.finalize
-´´´
+```
 
 
 
 ### Function: create_dataset_and_table_and_move_data_with_sql_query_bq
 
-´´´
+```
 gcloud functions deploy create_dataset_and_table_and_move_data_with_sql_query_bq --runtime python38 --region europe-west3 --trigger-resource "big-data-poblacion" --trigger-event google.storage.object.finalize
-´´´
+```
 
 ### Function: create_dataset_and_table_and_move_data_with_transformations
 
-´´´
+```
 gcloud functions deploy create_dataset_and_table_and_move_data_encrypt_bq --runtime python38 --region europe-west3 --trigger-resource "big-data-poblacion" --service-account "ideas-functions-video@ivory-honor-272915.iam.gserviceaccount.com" --trigger-event google.storage.object.finalize
-´´´
+```
 
 
 
@@ -89,6 +119,9 @@ https://note.nkmk.me/en/python-pandas-list/
 https://cloud.google.com/bigquery/docs/dry-run-queries
 https://cloud.google.com/bigquery/quotas#query_jobs
 https://cloud.google.com/bigquery/docs/error-messages
+
+#### Recommended reading 
+https://www.aepd.es/sites/default/files/2019-09/guia-orientaciones-procedimientos-anonimizacion.pdf
 
 ### Error
 
