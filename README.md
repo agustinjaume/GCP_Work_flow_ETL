@@ -108,20 +108,20 @@ its ok
 
 ### Documentation 
 
-https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv?hl=es
-https://cloud.google.com/kms/docs/encrypt-decrypt
-https://cloud.google.com/bigquery/streaming-data-into-bigquery
-https://cloud.google.com/bigquery/docs/best-practices-costs
-https://cloud.google.com/bigquery/docs/pandas-gbq-migration
-https://cloud.google.com/bigquery/docs/managing-table-schemas?hl=es-419
-https://towardsdatascience.com/apply-and-lambda-usage-in-pandas-b13a1ea037f7
-https://note.nkmk.me/en/python-pandas-list/
-https://cloud.google.com/bigquery/docs/dry-run-queries
-https://cloud.google.com/bigquery/quotas#query_jobs
-https://cloud.google.com/bigquery/docs/error-messages
+- https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv?hl=es
+- https://cloud.google.com/kms/docs/encrypt-decrypt
+- https://cloud.google.com/bigquery/streaming-data-into-bigquery
+- https://cloud.google.com/bigquery/docs/best-practices-costs
+- https://cloud.google.com/bigquery/docs/pandas-gbq-migration
+- https://cloud.google.com/bigquery/docs/managing-table-schemas?hl=es-419
+- https://towardsdatascience.com/apply-and-lambda-usage-in-pandas-b13a1ea037f7
+- https://note.nkmk.me/en/python-pandas-list/
+- https://cloud.google.com/bigquery/docs/dry-run-queries
+- https://cloud.google.com/bigquery/quotas#query_jobs
+- https://cloud.google.com/bigquery/docs/error-messages
 
 #### Recommended reading 
-https://www.aepd.es/sites/default/files/2019-09/guia-orientaciones-procedimientos-anonimizacion.pdf
+- https://www.aepd.es/sites/default/files/2019-09/guia-orientaciones-procedimientos-anonimizacion.pdf
 
 ### Error
 
