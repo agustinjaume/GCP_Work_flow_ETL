@@ -3,9 +3,9 @@
 In this video, we will see why create a workflow in Google Cloud to run when a file is uploaded to the bucket.
 We will convert the information into a data set.
 We will transform part of the information in the data set for anonymization or segmentation, to avoid the following risks:
-    a. Known existing re-identification risks
-    b. Potential re-identification risks
-    c. Unknown risks
+-    a. Known existing re-identification risks
+-    b. Potential re-identification risks
+-    c. Unknown risks
 
 We will load the dataset again so that it is available for consumption.
 
