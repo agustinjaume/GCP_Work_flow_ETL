@@ -119,6 +119,7 @@ its ok
 - https://cloud.google.com/bigquery/docs/dry-run-queries
 - https://cloud.google.com/bigquery/quotas#query_jobs
 - https://cloud.google.com/bigquery/docs/error-messages
+- https://sitiobigdata.com/2019/05/31/bigquery-data-science/
 
 #### Recommended reading 
 - https://www.aepd.es/sites/default/files/2019-09/guia-orientaciones-procedimientos-anonimizacion.pdf
