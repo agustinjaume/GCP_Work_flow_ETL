@@ -129,3 +129,5 @@ its ok
 google.api_core.exceptions.NotFound: 404 POST https://bigquery.googleapis.com/bigquery/v2/projects/ivory-honor-272915/jobs: Not found: Dataset ivory-honor-272915:ivory-honor-272915:poblacion
 
 google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1; errors: 1. Please look into the errors[] collection for more details.
+
+
