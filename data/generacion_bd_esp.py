@@ -4,7 +4,7 @@ import csv,  pandas, os
 import json
 
 fake = Faker(['es_ES']) 
-total= 15  #1000000
+total= 2000  #1000000
 time_file = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
 destinationcsv="db-"+ str(time_file)+"-tot"+(str(total))+ ".csv"
 destinationjson="db-"+ str(time_file)+"-tot"+(str(total))+ ".json"
