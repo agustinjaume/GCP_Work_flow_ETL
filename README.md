@@ -44,6 +44,22 @@ It is very important to have different levels of security.
 <img src="./images/bigquery-3.PNG" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
 
 
+
+### Big Query with Python function to perform SQL query
+
+wWe already know the SQL statements to interact with data in a database.
+
+```
+SELECT name  FROM `ivory-honor-272915.20200821db20200820100914tot10.20200821db20200820100914tot10` LIMIT 1000
+```
+
+We also know from the previous videos how to have tables with imported data in a dataset within Big Query.
+Today we will see how to make queries from a Python function within our Cloud function.
+
+
+<img src="./images/3_gcp_etl_by_agustin_jaume-3-FUNCTION-sql-workshop.png" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
+
+
 ### Commands to work with Workspaces
 
 ```
