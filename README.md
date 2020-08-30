@@ -60,6 +60,14 @@ Today we will see how to make queries from a Python function within our Cloud fu
 <img src="./images/3_gcp_etl_by_agustin_jaume-3-FUNCTION-sql-workshop.png" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
 
 
+### KMS column data encryption
+
+KMS -  Cloud Key Management Service allows you to create, import, and manage cryptographic keys and perform cryptographic operations in a single centralized cloud service.
+
+
+<img src="./images/4-kms-workshop.png" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
+
+
 ### Commands to work with Workspaces
 
 ```
@@ -95,7 +103,7 @@ gcloud functions deploy create_dataset_and_table_and_move_data_with_sql_query_bq
 ### Function: create_dataset_and_table_and_move_data_with_transformations
 
 ```
-gcloud functions deploy create_dataset_and_table_and_move_data_encrypt_bq --runtime python38 --region europe-west3 --trigger-resource "big-data-poblacion" --service-account "ideas-functions-video@ivory-honor-272915.iam.gserviceaccount.com" --trigger-event google.storage.object.finalize
+gcloud functions deploy create_dataset_and_table_and_move_data_encrypt_bq --runtime python38 --region europe-west3 --trigger-resource "big-data-poblacion" --timeout 520s --service-account "ideas-functions-video@ivory-honor-272915.iam.gserviceaccount.com" --trigger-event google.storage.object.finalize
 ```
 
 
@@ -136,14 +144,17 @@ its ok
 - https://cloud.google.com/bigquery/quotas#query_jobs
 - https://cloud.google.com/bigquery/docs/error-messages
 - https://sitiobigdata.com/2019/05/31/bigquery-data-science/
+- https://cloud.google.com/bigquery/quotas?hl=es
+- https://cloud.google.com/security-key-management#section-1
 
 #### Recommended reading 
 - https://www.aepd.es/sites/default/files/2019-09/guia-orientaciones-procedimientos-anonimizacion.pdf
 
-### Error
+### Errors found
 
 google.api_core.exceptions.NotFound: 404 POST https://bigquery.googleapis.com/bigquery/v2/projects/ivory-honor-272915/jobs: Not found: Dataset ivory-honor-272915:ivory-honor-272915:poblacion
 
 google.api_core.exceptions.BadRequest: 400 Error while reading data, error message: CSV table encountered too many errors, giving up. Rows: 1; errors: 1. Please look into the errors[] collection for more details.
 
+403 Exceeded rate limits: too many table update operations for this table.
 
