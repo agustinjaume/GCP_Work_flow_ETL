@@ -81,3 +81,15 @@ def get_data(project_id, dataset_name_only_30):
     df = pandas.read_gbq(sql, project_id=project_id, dialect='standard')
     print(df)
     print("End of sql query")
+
+
+def modify_value_in_table(project_id, dataset_name_only_30):
+    
+    path_table = project_id + "." + dataset_name_only_30 + "." + dataset_name_only_30
+    print(path_table)
+    sql = "UPDATE " + "`" + path_table + "`" + " SET " + "c_encrypt = " + "\"2\" " + "WHERE 1 = 1"
+    #UPDATE `ivory-honor-272915.20200822db20200820100914tot10.20200822db20200820100914tot10` SET c_encrypt = "1" WHERE 1 = 1
+    df = pandas.read_gbq(sql, dialect='standard')
+    df = pandas.read_gbq(sql, project_id=project_id, dialect='standard')
+    print(df)
+    print("End of sql query")

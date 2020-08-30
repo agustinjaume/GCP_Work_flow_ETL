@@ -47,7 +47,7 @@ It is very important to have different levels of security.
 
 ### Big Query with Python function to perform SQL query
 
-wWe already know the SQL statements to interact with data in a database.
+We already know the SQL statements to interact with data in a databases.
 
 ```
 SELECT name  FROM `ivory-honor-272915.20200821db20200820100914tot10.20200821db20200820100914tot10` LIMIT 1000
