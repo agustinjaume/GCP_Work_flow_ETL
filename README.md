@@ -64,6 +64,8 @@ Today we will see how to make queries from a Python function within our Cloud fu
 
 KMS -  Cloud Key Management Service allows you to create, import, and manage cryptographic keys and perform cryptographic operations in a single centralized cloud service.
 
+We will create a function from the web console that will be activated when you upload a file, copy the data to Bigquery and encrypt one of the columns with KMS using symmetric keys.
+
 
 <img src="./images/4-kms-workshop.png" alt="Kitten" title="A cute kitten" width="70%" height="70%" />
 
